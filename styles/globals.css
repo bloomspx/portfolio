@@ -5,7 +5,11 @@
 @layer components {
     .profileButton {
         @apply px-6 uppercase text-sm tracking-widest
-        text-gray-400 transition-all hover:text-gray-200
+        text-gray-300 transition-all hover:text-gray-200
         hover:font-semibold hover:animate-bounce
+    }
+    .headerTitle {
+        @apply absolute top-24 uppercase tracking-[20px] ml-3
+        text-gray-300 text-2xl animate-pulse
     }
 }
