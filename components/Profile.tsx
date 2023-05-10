@@ -25,25 +25,6 @@ function Profile({}: Props) {
     <div className='h-screen flex flex-col space-y-5
         items-center justify-center text-center overflow-hidden'>
         <BackgroundCircles/>
-        {/* <motion.div 
-            initial={{
-                opacity:0,
-                scale:0.6,
-            }}
-            animate={{
-                opacity:1,
-                scale:1,
-            }}
-            transition={{
-                duration:1,
-            }}
-            className='border border-gray-400 relative w-48 h-48 overflow-hidden mx-auto'>
-            <Image 
-                alt="profile-pic"
-                layout='fill'
-                objectFit='cover'
-                src="https://media.licdn.com/dms/image/D5603AQHKlyWeJXFDxQ/profile-displayphoto-shrink_400_400/0/1683008099896?e=1689206400&v=beta&t=3zgq6gp9M-zjok-1edloM1v-qMxRlZ8AWO9T1rej82M"/>
-        </motion.div> */}
         <div className='z-20'>
             <h2 className='text-lg font-semibold uppercase text-gray-300 pb-2 tracking-[5px] animate-pulse'>
                 Learn. Grow. Repeat.
@@ -59,14 +40,14 @@ function Profile({}: Props) {
                 <Link href={'#about'}>
                     <button className='profileButton'>About</button>
                 </Link>
-                <Link href={'#experience'}>
-                    <button className='profileButton'>Experience</button>
+                <Link href={'#projects'}>
+                    <button className='profileButton'>Projects</button>
                 </Link>
                 <Link href={'#skills'}>
                     <button className='profileButton'>Skills</button>
                 </Link>
-                <Link href={'#projects'}>
-                    <button className='profileButton'>Project</button>
+                <Link href={'#experience'}>
+                    <button className='profileButton'>Experience</button>
                 </Link>
             </div>
         </div>

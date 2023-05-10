@@ -26,10 +26,12 @@ export default function Header({}: Props) {
             >
             {/* Social Icons */}
             <SocialIcon 
+                className='headerButton'
                 url='https://www.linkedin.com/in/pei-xuan-soh/'
                 fgColor='grey'
                 bgColor='transparent'/>
             <SocialIcon 
+                className='headerButton'
                 url='https://github.com/bloomspx'
                 fgColor='grey'
                 bgColor='transparent'/>
@@ -47,7 +49,7 @@ export default function Header({}: Props) {
                 scale:1,
             }}
             transition={{
-                duration:1
+                duration:1.2
             }}
             className='flex flex-row items-center cursor-pointer'
         >
