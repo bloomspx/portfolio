@@ -43,24 +43,45 @@ export default function ProjectCard({name, img, description, tech, summary, url}
         </motion.div>
 
         <div className='px-0 md:px-6'>
-            <div className='flex flex-row items-center'>
+            <motion.div 
+                initial={{ y: 16, opacity: 0 }}
+                transition={{ duration: 0.5}}
+                whileInView={{ opacity: 1, y: 0}}
+                viewport={{once:true}}
+                className='flex flex-row items-center'>
+                    
                 <h4 className='text-3xl font-light'>{name} | </h4>
                 <SocialIcon 
                     className='transition-all hover:animate-pulse-once hover:bg-salmon/50 hover:rounded-full'
                     url={url}
                     fgColor='white'
                     bgColor='transparent'/>
-            </div>
-            <p className='uppercase font-semibold text-gray-300 text-sm'>
-                {description}
-            </p>
-            <div className='flex space-x-2 my-2'>
-                {techIcons}
-            </div>
+            </motion.div>
+            <motion.p 
+                initial={{ y: 16, opacity: 0 }}
+                transition={{ duration: 0.5}}
+                whileInView={{ opacity: 1, y: 0}}
+                viewport={{once:true}}
+                className='uppercase font-semibold text-gray-300 text-sm'>
+                    {description}
+            </motion.p>
+            <motion.div 
+                initial={{ y: 16, opacity: 0 }}
+                transition={{ duration: 0.5}}
+                whileInView={{ opacity: 1, y: 0}}
+                viewport={{once:true}}
+                className='flex space-x-2 my-2'>
+                    {techIcons}
+            </motion.div>
 
-            <ul className='list-disc space-y-0 ml-5 text-sm'>
-                {summaryPoints}
-            </ul>
+            <motion.ul 
+                initial={{ y: 16, opacity: 0 }}
+                transition={{ duration: 0.5}}
+                whileInView={{ opacity: 1, y: 0}}
+                viewport={{once:true}}
+                className='list-disc space-y-0 ml-5 text-sm'>
+                    {summaryPoints}
+            </motion.ul>
         </div>
     </article>
   )
