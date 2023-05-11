@@ -50,7 +50,7 @@ export default function Header({}: Props) {
             transition={{
                 duration:1.2
             }}
-            className='flex flex-row items-center cursor-pointer'
+            className='flex flex-row items-center cursor-default'
         >
             <p className='uppercase hidden md:inline-flex text-sm font-semibold text-gray-400'>@bloomspx</p>
             <SocialIcon 

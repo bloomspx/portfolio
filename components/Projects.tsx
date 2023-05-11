@@ -14,7 +14,7 @@ export default function Projects({}: Props) {
       tech:['React', 'Javascript','Flask', 'NodeJS', 'CSS'],
       sum:['Applied Vosk Speech Recognition to perform speech-to-text conversion', 
         'Applied HuggingFace NLP Transformers to perform text analysis (summary, sentiment analysis & topic modelling)',
-        'Deployed contanerized applications on Minishift with REST API Architecture.'
+        'Deployed contanerized applications on Minishift with REST API Architecture'
         ]},
     {name: 'Ascenda Loyalty Hotel Booking', 
       img: 'Ascenda',

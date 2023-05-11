@@ -28,7 +28,7 @@ export default function ProjectCard({name, img, description, tech, summary, url}
 
   return (
     <article className='flex flex-col rounded-lg items-center space-y-3 flex-shrink-0
-        w-[500px] md:w-[600px] bg-[#292929] snap-center p-10 shadow-2xl
+        w-[500px] md:w-[600px] bg-[#292929] snap-center p-10 shadow-3xl
         hover:opacity-100 opacity-40 transition-opacity duration-200 overflow-hidden'>
         <motion.div 
             initial={{opacity:0, y:-100}}
