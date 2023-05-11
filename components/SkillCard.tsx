@@ -24,7 +24,7 @@ function SkillCard({ directionLeft, name }: Props) {
           alt="icon"
           width={72}
           height={72}
-          src={`/${name}.svg`}
+          src={`/static/images/${name}.svg`}
         />
       </motion.div>
 

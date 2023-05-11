@@ -30,7 +30,7 @@ export default function ProjectCard({name, description, tech, summary}: Props) {
             <Image 
                 alt=""
                 layout='fill'
-                src={`/${name}.png`}/>
+                src={`/static/images/${name}.png`}/>
         </motion.div>
 
         <div className='px-0 md:px-6'>
