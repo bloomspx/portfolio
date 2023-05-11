@@ -22,7 +22,7 @@
         hover:font-semibold hover:animate-bounce
     }
     .headerTitle {
-        @apply absolute top-11 uppercase tracking-[20px] ml-3
+        @apply absolute top-12 uppercase tracking-[20px] ml-3
         text-gray-300 text-xl font-bold animate-pulse
     }
 }

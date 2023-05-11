@@ -22,7 +22,7 @@ function Profile({}: Props) {
     });
 
   return (
-    <div className='h-screen flex flex-col space-y-5
+    <div className=' h-[120vh] flex flex-col space-y-5
         items-center justify-center text-center overflow-hidden'>
         <BackgroundSquares/>
         <div className='z-20'>

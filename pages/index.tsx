@@ -18,23 +18,23 @@ export default function Home() {
 
       <Header/>
 
-      <section id ='profile' className='snap-start'>
+      <section id ='profile'>
         <Profile/>
       </section>
       
-      <section id='about' className='snap-center'>
+      <section id='about'>
         <About/>
       </section>
       
-      <section id='projects' className='snap-center'>
+      <section id='projects'>
         <Projects/> 
       </section>
       
-      <section id='skills' className='snap-start'>
+      <section id='skills'>
         <Skills/>
       </section>
       
-      <section id='contact' className='snap-start'>
+      <section id='contact'>
         <ContactMe/>
       </section>
 

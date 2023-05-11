@@ -27,6 +27,7 @@ export default function Skills({}: Props) {
     {name: 'Firebase'},
     {name: 'Express'},
     {name: 'Flask'},
+    {name: 'Selenium'},
     {name: 'MongoDB'},
     {name: 'Axios'},
   ];
@@ -58,7 +59,7 @@ export default function Skills({}: Props) {
           <div className='pt-20 pr-20 grid grid-cols-2 gap-5'>
             {languageCards}
           </div>
-          <div className='pt-20 grid grid-cols-3 gap-5'>
+          <div className='pt-20 grid grid-cols-4 gap-5'>
             {frameworkCards}
           </div>
         </motion.div>
