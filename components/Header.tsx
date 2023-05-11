@@ -24,7 +24,6 @@ export default function Header({}: Props) {
             }}
             className='flex flex-row items-center'
             >
-            {/* Social Icons */}
             <SocialIcon 
                 className='headerButton'
                 url='https://www.linkedin.com/in/pei-xuan-soh/'
@@ -53,10 +52,10 @@ export default function Header({}: Props) {
             }}
             className='flex flex-row items-center cursor-pointer'
         >
-            <p className='uppercase hidden md:inline-flex text-sm font-semibold text-gray-400'>Get in Touch</p>
+            <p className='uppercase hidden md:inline-flex text-sm font-semibold text-gray-400'>@bloomspx</p>
             <SocialIcon 
-                className='cursor-pointer'
-                network='email'
+                className='headerButton'
+                url='mailto:bloomspx@hotmail.com'
                 fgColor='grey'
                 bgColor='transparent'/>
         </motion.div>

@@ -5,10 +5,9 @@ import { motion } from 'framer-motion'
 type Props = {
   directionLeft?: boolean;
   name: string;
-  source:string;
 };
 
-function SkillCard({ directionLeft, name, source }: Props) {
+function SkillCard({ directionLeft, name }: Props) {
   return (
     <div className='relative flex cursor-pointer group'>
       <motion.div
@@ -25,14 +24,14 @@ function SkillCard({ directionLeft, name, source }: Props) {
           alt="icon"
           width={72}
           height={72}
-          src={source}
+          src={`/${name}.svg`}
         />
       </motion.div>
 
       <div className='absolute opacity-0 transition duration-300 ease-in-out
         group-hover:opacity-90 group-hover:bg-white h-[72px] w-[72px] rounded-full z-0'>
         <div className='flex items-center justify-center h-full'>
-          <p className='text-sm font-bold text-black opacity-100 truncate'>{name}</p>
+          <p className='text-sm font-mono font-bold text-black opacity-100 truncate'>{name}</p>
         </div>
       </div>
     </div>

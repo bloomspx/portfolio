@@ -1,6 +1,6 @@
 import React from 'react'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
-import BackgroundCircles from './BackgroundCircles';
+import BackgroundSquares from './BackgroundSquares';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
@@ -24,7 +24,7 @@ function Profile({}: Props) {
   return (
     <div className='h-screen flex flex-col space-y-5
         items-center justify-center text-center overflow-hidden'>
-        <BackgroundCircles/>
+        <BackgroundSquares/>
         <div className='z-20'>
             <h2 className='text-lg font-semibold uppercase text-gray-300 pb-2 tracking-[5px] animate-pulse'>
                 Learn. Grow. Repeat.
@@ -46,8 +46,8 @@ function Profile({}: Props) {
                 <Link href={'#skills'}>
                     <button className='profileButton'>Skills</button>
                 </Link>
-                <Link href={'#experience'}>
-                    <button className='profileButton'>Experience</button>
+                <Link href={'#contact'}>
+                    <button className='profileButton'>Contact</button>
                 </Link>
             </div>
         </div>

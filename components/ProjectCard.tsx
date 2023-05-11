@@ -2,13 +2,25 @@ import Image from 'next/image'
 import React from 'react'
 import { motion } from 'framer-motion'
 
-type Props = {}
+type Props = {
+    name:string,
+    description:string,
+    tech:object,
+    summary:object,
+}
 
-export default function ProjectCard({}: Props) {
+export default function ProjectCard({name, description, tech, summary}: Props) {
+
+    const techIcons: React.ReactNode[] = [];
+
+    // tech.forEach((proj) => {
+    //     projectCards.push(<ProjectCard name={proj.name} description={proj.desc} tech={proj.tech} summary={proj.sum}/>);
+    // })
+
   return (
     <article className='flex flex-col rounded-lg items-center space-y-3 flex-shrink-0
-        w-[500px] md:w-[600px] bg-[#292929] snap-center p-10 
-        hover:opacity-100 opacity-40 transition-opacity duration-200 overflow-hidden overflow-y-scroll '>
+        w-[500px] md:w-[600px] bg-[#292929] snap-center p-10
+        hover:opacity-100 opacity-40 transition-opacity duration-200 overflow-hidden'>
         <motion.div 
             initial={{opacity:0, y:-100}}
             whileInView={{opacity:1, y:0}}
@@ -18,11 +30,14 @@ export default function ProjectCard({}: Props) {
             <Image 
                 alt=""
                 layout='fill'
-                src="/chatterbox.png"/>
+                src={`/${name}.png`}/>
         </motion.div>
 
         <div className='px-0 md:px-6'>
-            <h4 className='text-3xl font-light'>Chatterbox</h4>
+            <h4 className='text-3xl font-light'>{name}</h4>
+            <p className='uppercase font-semibold text-gray-300 text-sm'>
+                {description}
+            </p>
             <div className='flex space-x-2 my-2'>
                 {/* Technologies Used */}
                 <Image
@@ -46,15 +61,12 @@ export default function ProjectCard({}: Props) {
                     height={20}
                     src="/flask.svg"/>
             </div>
-            <p className='uppercase font-semibold pb-3 text-gray-300 text-sm'>
-                A text-to-speech & text analysis tool
-            </p>
 
             <ul className='list-disc space-y-0 ml-5 text-sm'>
-                <li>Summary Points</li>
-                <li>Summary Points</li>
-                <li>Summary Points</li>
-                <li>Summary Points</li>
+                <li>Points</li>
+                <li>Points</li>
+                <li>Points</li>
+                <li>Points</li>
             </ul>
         </div>
     </article>

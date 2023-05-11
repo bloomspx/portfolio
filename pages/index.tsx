@@ -1,4 +1,5 @@
 import About from '@/components/About'
+import ContactMe from '@/components/ContactMe'
 import Header from '@/components/Header'
 import Profile from '@/components/Profile'
 import Projects from '@/components/Projects'
@@ -8,9 +9,11 @@ import Head from 'next/head'
 export default function Home() {
   return (
     <div className='bg-gradient-to-br from-black-pearl to-dark-azure text-white h-screen
-      snap-y snap-mandatory overflow-scroll z-0'>
+      snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 
+      scrollbar-thin scrollbar-track-gray-500/40 scrollbar-thumb-melon/80'>
       <Head>
-        <title>Portfolio</title>
+        <title>Portfolio | @bloomspx</title>
+
       </Head>
 
       <Header/>
@@ -30,7 +33,11 @@ export default function Home() {
       <section id='skills' className='snap-start'>
         <Skills/>
       </section>
-      {/* Contact Me */}
+      
+      <section id='contact' className='snap-start'>
+        <ContactMe/>
+      </section>
+
     </div>
   )
 }
