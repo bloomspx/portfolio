@@ -14,7 +14,6 @@ export default function Skills({}: Props) {
     {name: 'HTML'},
     {name: 'CSS'},
     {name: 'PHP'},
-    {name: 'MySQL'},
   ];
   const frameworks = [
     {name: 'React'},
@@ -29,7 +28,6 @@ export default function Skills({}: Props) {
     {name: 'Flask'},
     {name: 'Selenium'},
     {name: 'MongoDB'},
-    {name: 'Axios'},
   ];
 
   const languageCards: React.ReactNode[] = [];

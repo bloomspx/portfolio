@@ -30,8 +30,8 @@ export default function Projects({}: Props) {
       desc:'A personal portfolio webpage',
       url: 'https://github.com/bloomspx/portfolio', 
       tech:['React', 'Typescript', 'TailwindCSS', 'NodeJS', 'CSS'],
-      sum:['Implemented Framer Motion and Tailwind CSS',
-        "Inspired and Modified from Sonny Sangha's Portfolio Project",
+      sum:['Implemented using Framer Motion and Tailwind CSS',
+        "You're looking at it right now!"
         ]},
     {name: 'Studify', 
       img: 'Studify',
