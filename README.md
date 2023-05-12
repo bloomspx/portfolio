@@ -1,8 +1,13 @@
-# Portfolio Project
+<div align="center">
+  <img alt="Logo" src="./public/favicon.ico" width="80" />
+</div>
+<h1 align='center' href='https://bloomspx.me'> bloomspx.me </h1>
 
-Built using Next.js, Tailwind CSS, React.
+<p align="center">
+  Built using Next.js, Tailwind CSS and React.
+</p>
 
-## Additional Resources
+## Resources
 - framer-motion
 - react-hook-form
 - react-simple-typewriter
@@ -11,4 +16,4 @@ Built using Next.js, Tailwind CSS, React.
 - svgporn
 
 ## Credits
-- modified from Sonny Sangha's [Portfolio Tutorial](https://www.youtube.com/watch?v=urgi2iz9P6U)
+- inspired and modified from Sonny Sangha's [Portfolio Tutorial](https://www.youtube.com/watch?v=urgi2iz9P6U)
