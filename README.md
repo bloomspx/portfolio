@@ -1,11 +1,11 @@
 <div align="center">
   <img alt="Logo" src="./public/favicon.ico" width="80" />
-</div>
 <h1 align='center' href='https://bloomspx.me'> bloomspx.me </h1>
 
 <p align="center">
   Built using Next.js, Tailwind CSS and React.
 </p>
+</div>
 
 ## Resources
 - framer-motion
