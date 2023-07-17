@@ -20,7 +20,7 @@ export default function About({}: Props) {
                 alt="profile-pic"
                 layout='fill'
                 objectFit='cover'
-                src="https://media.licdn.com/dms/image/D5603AQHKlyWeJXFDxQ/profile-displayphoto-shrink_800_800/0/1683008099896?e=1689206400&v=beta&t=eGnSwOT_n5NBXXrLsj_eKE8kKPq_iEmWNirtjnBsidM"/>
+                src="/static/images/Profile.jpeg"/>
         </motion.div>
         
         <motion.div 
