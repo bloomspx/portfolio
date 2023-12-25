@@ -27,7 +27,13 @@ export default function ProjectCard({name, img, description, tech, summary, url}
     })
 
   return (
-    <article className='projectCard'>
+    <motion.article 
+        className='projectCard'
+        initial={{ opacity:0.5, y:200 }}
+        transition={{ duration:0.5 }}
+        whileInView={{ opacity:1, y:0 }}
+        viewport={{ once: true }}
+    >
         <div className='webpageHeader'>
             <div className='circle bg-red-400'></div>
             <div className='circle bg-yellow-400'></div>
@@ -86,6 +92,6 @@ export default function ProjectCard({name, img, description, tech, summary, url}
             />
             </motion.div>
         </div>
-    </article>
+    </motion.article>
   )
 }
