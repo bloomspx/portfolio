@@ -1,0 +1,67 @@
+[
+  {
+    "name": "SmartDrop",
+    "img": "SmartDrop",
+    "desc": "An IOT delivery box built using AWS + React & Raspberry Pi + ESP32",
+    "url": "https://github.com/bloomspx/smartdrop",
+    "tech": ["AWS", "React", "Javascript", "NodeJS", "CSS", "Python"],
+    "sum": [
+      "Set up backend server using AWS Services (DynamoDB, Lambda, API, IoT Core) for frontend web application to call APIs and update User and Order databases",
+      "Developed React web application for users to track orders delivery status"
+    ]
+  },
+  {
+    "name": "Chatterbox",
+    "img": "Chatterbox2",
+    "desc": "A speech-to-text & text analysis web-app",
+    "url": "https://github.com/bloomspx/chatterbox/",
+    "tech": ["React", "Javascript", "Flask", "NodeJS", "CSS"],
+    "sum": [
+      "Applied Vosk Speech Recognition to perform speech-to-text conversion",
+      "Applied HuggingFace NLP Transformers to perform text analysis (summary, sentiment analysis & topic modelling)",
+      "Deployed contanerized applications on Minishift with REST API Architecture"
+    ]
+  },
+  {
+    "name": "Ascenda Loyalty Hotel Booking",
+    "img": "Ascenda",
+    "desc": "A hotel booking web-app built using MERN framework",
+    "url": "https://github.com/bloomspx/ESC_Ascenda",
+    "tech": [
+      "React",
+      "Javascript",
+      "Express",
+      "MongoDB",
+      "Selenium",
+      "NodeJS",
+      "CSS"
+    ],
+    "sum": [
+      "Designed & built destination search page, hotel search results page and individual hotel room pages using React",
+      "Implemented Express API calls from frontend to backend",
+      "Designed Selenium tests in Java to test webpages"
+    ]
+  },
+  {
+    "name": "Studify",
+    "img": "Studify3",
+    "desc": "An Android app designed to make group study more efficient",
+    "url": "https://github.com/bloomspx/studify",
+    "tech": ["Java", "Firebase"],
+    "sum": [
+      "Designed home & login fragments using MVVM (Model-View-ViewModel) Architecture",
+      "Implemented Google Firebase Authentication for user login & user database integration"
+    ]
+  },
+  {
+    "name": "Portfolio",
+    "img": "Portfolio2",
+    "desc": "A personal portfolio webpage",
+    "url": "https://github.com/bloomspx/portfolio",
+    "tech": ["React", "Typescript", "TailwindCSS", "NodeJS", "CSS"],
+    "sum": [
+      "Implemented using Typescript and React with Tailwind CSS",
+      "My first personal project that you're looking at right now!"
+    ]
+  }
+]

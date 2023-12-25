@@ -19,20 +19,22 @@ function ContactMe({}: Props) {
     }
 
   return (
+    <div className="paddingBox">
+    <h3 className="headerTitle">Contact</h3>
+    <h4 className="subtitle">
+      Reach out to me through these platforms!
+      </h4>
+    <div className="padding-sm"></div>
     <motion.div
       initial={{ opacity: 0, scale: 0.8 }}
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.9 }}
-      className="h-screen flex relative flex-col text-center px-10
+      viewport={{ once: true }}
+      className="flex relative flex-col text-center px-10 w-full
             md:text-left md:flex-row max-w-7xl justify-evenly mx-auto items-center"
     >
-      <h3 className="headerTitle">Contact</h3>
 
       <div className="flex flex-col space-y-5">
-        <h4 className="text-2xl font-semibold text-center text-gray-300">
-          Reach out to me through these platforms!
-        </h4>
-
         <div>
           <div className="flex flex-row justify-evenly items-center space-x-5">
             <SocialIcon
@@ -86,15 +88,17 @@ function ContactMe({}: Props) {
           />
           <textarea
             {...register("message")}
-            placeholder="Or Leave Your Message Here"
+            placeholder="Type your message here"
             className="contactInput"
           />
-          <button className="bg-salmon py-2 px-4 rounded-md text-black font-mono font-semibold uppercase text-md">
+          <button className="submitButton">
             Submit
           </button>
         </form>
       </div>
     </motion.div>
+    <div className="padding-lg"></div>
+    </div>
   );
 }
 

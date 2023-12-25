@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import SkillIcon from './SkillIcon';
 import { SocialIcon } from 'react-social-icons';
@@ -19,7 +19,7 @@ export default function ProjectCard({name, img, description, tech, summary, url}
     const summaryPoints: React.ReactNode[] = [];
 
     tech.forEach((skill) => {
-        techIcons.push(<SkillIcon name={skill}/>);
+        techIcons.push(<SkillIcon key={skill} name={skill}/>);
     })
     
     summary.forEach((point, index) => {
@@ -27,61 +27,64 @@ export default function ProjectCard({name, img, description, tech, summary, url}
     })
 
   return (
-    <article className='flex flex-col rounded-lg items-center space-y-3 flex-shrink-0
-        w-[500px] md:w-[600px] bg-[#292929] snap-center p-10 shadow-3xl
-        hover:opacity-100 opacity-40 transition-opacity duration-200 overflow-hidden'>
-        <motion.div 
-            initial={{opacity:0, y:-100}}
-            whileInView={{opacity:1, y:0}}
-            transition={{duration:1}}
-            viewport={{once:true}}
-            className='relative overflow-hidden object-cover object-center rounded-lg w-60 h-36'>
+    <article className='projectCard'>
+        <div className='webpageHeader'>
+            <div className='circle bg-red-400'></div>
+            <div className='circle bg-yellow-400'></div>
+            <div className='circle bg-green-400'></div>
+        </div>
+
+        <div className='imageContainer'>
             <Image 
                 alt=""
-                fill={true}
-                src={`/static/images/${img}.png`}/>
-        </motion.div>
+                layout="fill"
+                objectFit="cover"
+                src={`/static/images/${img}.png`}
+                className='rounded-t-md px-1'
+            />
+            <div className="summaryBody">
+                <div className='summaryContent'>{summaryPoints}</div>
+                {/* <p className='summaryContent'>{summaryPoints}</p> */}
+            </div>
+        </div>
+        
+        <div className='w-full h-1.5 bg-neutral-800'></div>
 
-        <div className='px-0 md:px-6'>
-            <motion.div 
+        <div className='projectContainer'>
+            <motion.h1
                 initial={{ y: 16, opacity: 0 }}
                 transition={{ duration: 0.5}}
                 whileInView={{ opacity: 1, y: 0}}
                 viewport={{once:true}}
-                className='flex flex-row items-center'>
-                    
-                <h4 className='text-3xl font-light'>{name} | </h4>
-                <SocialIcon 
-                    className='transition-all hover:animate-pulse-once hover:bg-salmon/50 hover:rounded-full'
-                    url={url}
-                    fgColor='white'
-                    bgColor='transparent'/>
-            </motion.div>
+                className='text-2xl font-semibold whitespace-nowrap text-shadow-md'>
+                {name}
+            </motion.h1>
             <motion.p 
                 initial={{ y: 16, opacity: 0 }}
                 transition={{ duration: 0.5}}
                 whileInView={{ opacity: 1, y: 0}}
                 viewport={{once:true}}
-                className='uppercase font-semibold text-gray-300 text-sm'>
+                className='text-gray-400 text-shadow-md'>
                     {description}
             </motion.p>
+
             <motion.div 
                 initial={{ y: 16, opacity: 0 }}
                 transition={{ duration: 0.5}}
                 whileInView={{ opacity: 1, y: 0}}
                 viewport={{once:true}}
-                className='flex space-x-2 my-2'>
+                className='projectBody'
+            >
+                <div className='iconsContainer'>
                     {techIcons}
+                </div>
+            <SocialIcon 
+                className='transition-all hover:animate-pulse-once'
+                url={url}
+                bgColor='white'
+                fgColor='transparent'
+            />
             </motion.div>
-
-            <motion.ul 
-                initial={{ y: 16, opacity: 0 }}
-                transition={{ duration: 0.5}}
-                whileInView={{ opacity: 1, y: 0}}
-                viewport={{once:true}}
-                className='list-disc space-y-0 ml-5 text-sm'>
-                    {summaryPoints}
-            </motion.ul>
         </div>
     </article>
   )

@@ -7,13 +7,11 @@ import Skills from '@/components/Skills'
 import Head from 'next/head'
 
 export default function Home() {
-  return (
-    <div className='bg-gradient-to-br from-black-pearl to-dark-azure text-white h-screen
-      snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 
-      scrollbar-thin scrollbar-track-gray-500/40 scrollbar-thumb-melon/80'>
-      <Head>
-        <title>Portfolio | @bloomspx</title>
 
+  return (
+    <div className='mainPage'>
+      <Head>
+        <title>Pei Xuan | Portfolio</title>
       </Head>
 
       <Header/>
@@ -37,7 +35,7 @@ export default function Home() {
       <section id='contact'>
         <ContactMe/>
       </section>
-
     </div>
   )
+  
 }

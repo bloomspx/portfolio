@@ -1,0 +1,15 @@
+[
+    {"name": "React"},
+    {"name": "NodeJS"},
+    {"name": "Github"},
+    {"name": "Docker"},
+    {"name": "AWS"},
+    {"name": "Firebase"},
+    {"name": "MongoDB"},
+    {"name": "Kubernetes"},
+    {"name": "Typescript"},
+    {"name": "TailwindCSS"},
+    {"name": "Express"},
+    {"name": "Flask"},
+    {"name": "Selenium"}
+  ]

@@ -6,7 +6,7 @@ type Props = {}
 
 export default function Header({}: Props) {
   return (
-    <header className='sticky top-0 p-5 px-6 flex items-start justify-between max-w-7xl mx-auto 
+    <header className='sticky top-0 p-5 px-6 flex items-start justify-between max-w-8xl mx-auto 
         z-20 xl:items-center'>
         <motion.div 
             initial={{
@@ -27,12 +27,12 @@ export default function Header({}: Props) {
             <SocialIcon 
                 className='headerButton'
                 url='https://www.linkedin.com/in/pei-xuan-soh/'
-                fgColor='grey'
+                fgColor='white'
                 bgColor='transparent'/>
             <SocialIcon 
                 className='headerButton'
                 url='https://github.com/bloomspx'
-                fgColor='grey'
+                fgColor='white'
                 bgColor='transparent'/>
         </motion.div>
 
@@ -52,12 +52,9 @@ export default function Header({}: Props) {
             }}
             className='flex flex-row items-center cursor-default'
         >
-            <p className='uppercase hidden md:inline-flex text-sm font-semibold text-gray-400'>@bloomspx</p>
-            <SocialIcon 
-                className='headerButton'
-                url='mailto:bloomspx@hotmail.com'
-                fgColor='grey'
-                bgColor='transparent'/>
+            <p className='headerText'>
+                @bloomspx
+            </p>
         </motion.div>
     </header>
   )

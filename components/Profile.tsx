@@ -1,9 +1,8 @@
 import React from 'react'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
-import BackgroundSquares from './BackgroundSquares';
-import Image from 'next/image';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
+import BackgroundCircles from './BackgroundCircles';
+import BackgroundCubes from './BackgroundCubes';
 
 type Props = {}
 
@@ -22,14 +21,12 @@ function Profile({}: Props) {
     });
 
   return (
-    <div className=' h-[120vh] flex flex-col space-y-5
-        items-center justify-center text-center overflow-hidden'>
-        <BackgroundSquares/>
-        <div className='z-20'>
-            <h2 className='text-lg font-semibold uppercase text-gray-300 pb-2 tracking-[5px] animate-pulse'>
-                Learn. Grow. Repeat.
-            </h2>
-            <h1 className='text-5xl font-semibold px-10'>
+    <div className='h-[80vh] flex flex-col relative
+        items-center justify-center text-center'>
+        <BackgroundCubes/>
+        <BackgroundCircles/>
+        <div className='absolute z-20'>
+            <h1 className='text-5xl font-semibold px-10 text-shadow-md'>
                 <span>
                     Hi, I'm <span className='font-bold text-melon'>{typedText}</span>
                 </span>

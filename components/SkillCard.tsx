@@ -17,10 +17,9 @@ function SkillCard({ directionLeft, name }: Props) {
         }}
         transition={{ duration: 1}}
         whileInView={{ opacity: 1, x: 0}}
-      >
+        viewport={{ once: true }}>
         <Image
-          className='rounded-full border border-gray-500 p-2 filter group-hover:grayscale
-            transition duration-300 ease-in-out'
+          className='skillIcon'
           alt="icon"
           width={72}
           height={72}
@@ -31,7 +30,9 @@ function SkillCard({ directionLeft, name }: Props) {
       <div className='absolute opacity-0 transition duration-300 ease-in-out
         group-hover:opacity-100 group-hover:bg-white h-[72px] w-[72px] rounded-full z-0'>
         <div className='flex items-center justify-center h-full'>
-          <p className='text-sm font-mono font-bold text-black opacity-100 truncate'>{name}</p>
+          <p className='text-sm font-mono font-bold text-black opacity-100 truncate'>
+            {name}
+          </p>
         </div>
       </div>
     </div>

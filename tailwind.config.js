@@ -17,14 +17,19 @@ module.exports = {
       colors:{
         'black-pearl': '#1a1b1c',
         'dark-azure': '#414345',
-        'salmon':'#ff9b85',
-        'melon':'#FFAC99',
         'dark-coral':'#B7CECE',
+        'dark-salmon':'#b85265',
+        'melon':'#FFAC99',
+        'salmon':'#ff9b85',
+        'white':'#FFFFFF'
       },
     },
   },
   plugins: [
     require('tailwind-scrollbar'),
   ],
+  variants: {
+    scrollbar: ['rounded']
+  }
 }
 
