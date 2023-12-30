@@ -1,7 +1,6 @@
 import React from 'react'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import Link from 'next/link';
-import BackgroundCircles from './BackgroundCircles';
 import BackgroundCubes from './BackgroundCubes';
 
 type Props = {}
@@ -24,7 +23,6 @@ function Profile({}: Props) {
     <div className='h-[80vh] flex flex-col relative
         items-center justify-center text-center'>
         <BackgroundCubes/>
-        <BackgroundCircles/>
         <div className='absolute z-20'>
             <h1 className='text-5xl font-semibold px-10 text-shadow-md'>
                 <span>

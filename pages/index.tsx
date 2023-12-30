@@ -1,4 +1,7 @@
 import About from '@/components/About'
+import BackgroundCircles from '@/components/BackgroundCircles'
+import BackgroundCirclesLeft from '@/components/BackgroundCirclesLeft'
+import BackgroundCirclesRight from '@/components/BackgroundCirclesRight'
 import ContactMe from '@/components/ContactMe'
 import Header from '@/components/Header'
 import Profile from '@/components/Profile'
@@ -9,12 +12,14 @@ import Head from 'next/head'
 export default function Home() {
 
   return (
-    <div className='mainPage'>
+    <div className='mainContainer'>
       <Head>
         <title>Pei Xuan | Portfolio</title>
       </Head>
 
       <Header/>
+      <BackgroundCirclesLeft/>
+      <BackgroundCirclesRight/>
 
       <section id ='profile'>
         <Profile/>

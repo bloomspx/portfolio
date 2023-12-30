@@ -5,6 +5,7 @@ type Props = {}
 
 export default function BackgroundCircles({}: Props) {
   return (
+    <div>
     <motion.div 
         initial={{
             opacity:0,
@@ -17,16 +18,18 @@ export default function BackgroundCircles({}: Props) {
         transition={{
             duration:2.5,
         }}
-        className='relative flex justify-center items-center h-full'
+        viewport={{ once: true }}
+        className='absolute top-0 flex items-center justify-center h-screen w-screen'
     >
-        <div className='border-2 rounded-full absolute border-white opacity-5 h-4 w-4'/>
-        <div className='border-4 rounded-full absolute border-white opacity-5 h-8 w-8'/>
-        <div className='border rounded-full absolute border-gray opacity-5 h-[150px] w-[150px]
+        <div className='border-2 rounded-full absolute border-white opacity-5 h-4 w-4 z-0'/>
+        <div className='border-4 rounded-full absolute border-white opacity-5 h-8 w-8 z-0'/>
+        <div className='border rounded-full absolute border-gray opacity-5 h-[150px] w-[150px] z-0
             duration-500 animate-ping'/>
-        <div className='border rounded-full absolute border-gray opacity-10 h-[450px] w-[450px]'/>
-        <div className='border rounded-full absolute border-gray opacity-5 h-[750px] w-[750px]
+        <div className='border rounded-full absolute border-gray opacity-10 h-[450px] w-[450px] z-0'/>
+        <div className='border rounded-full absolute border-gray opacity-5 h-[750px] w-[750px] z-0
             animate-pulse'/>
         <div/>
     </motion.div>
+    </div>
   )
 }

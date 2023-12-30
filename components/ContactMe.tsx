@@ -19,7 +19,7 @@ function ContactMe({}: Props) {
     }
 
   return (
-    <div className="paddingBox">
+    <div className="paddingContainer">
     <h3 className="headerTitle">Contact</h3>
     <h4 className="subtitle">
       Reach out to me through these platforms!
@@ -98,6 +98,10 @@ function ContactMe({}: Props) {
       </div>
     </motion.div>
     <div className="padding-lg"></div>
+    <h4 className="footnote">
+      Last Updated on Dec 2023 🎄
+    </h4>
+    <div className="padding-sm"></div>
     </div>
   );
 }

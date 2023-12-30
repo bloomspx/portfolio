@@ -17,6 +17,7 @@ module.exports = {
       colors:{
         'black-pearl': '#1a1b1c',
         'dark-azure': '#414345',
+        'dark-blue': '#2a324b',
         'dark-coral':'#B7CECE',
         'dark-salmon':'#b85265',
         'melon':'#FFAC99',

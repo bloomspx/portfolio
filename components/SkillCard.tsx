@@ -9,7 +9,7 @@ type Props = {
 
 function SkillCard({ directionLeft, name }: Props) {
   return (
-    <div className='relative flex cursor-pointer group'>
+    <div className='flex flex-col items-center gap-4 cursor-pointer'>
       <motion.div
         initial={{ 
           x: directionLeft ? -200 : 200,
@@ -27,14 +27,12 @@ function SkillCard({ directionLeft, name }: Props) {
         />
       </motion.div>
 
-      <div className='absolute opacity-0 transition duration-300 ease-in-out
-        group-hover:opacity-100 group-hover:bg-white h-[72px] w-[72px] rounded-full z-0'>
-        <div className='flex items-center justify-center h-full'>
-          <p className='text-sm font-mono font-bold text-black opacity-100 truncate'>
-            {name}
-          </p>
-        </div>
-      </div>
+      <div className={`flex justify-center py-1 px-3 rounded-md
+        font-semibold text-shadow shadow-md shadow-gray-800
+        ${directionLeft ? 'bg-dark-blue' : 'bg-dark-salmon'}`
+      }>
+        {name}
+      </div>  
     </div>
   )
 }

@@ -16,14 +16,14 @@ export default function Skills({}: Props) {
   const frameworkCards: React.ReactNode[] = [];
 
   languages.forEach((skill) => {
-    languageCards.push(<SkillCard name={skill.name} directionLeft={true}/>);
+    languageCards.push(<SkillCard name={skill.name} directionLeft={true} />);
   })
   frameworks.forEach((skill) => {
     frameworkCards.push(<SkillCard name={skill.name}/>);
   })
 
   return (
-    <div className='paddingBox'>
+    <div className='paddingContainer'>
       <h3 className='headerTitle'>Skills</h3>
       <h4 className='subtitle'>
         Here are the following <b>languages</b> and <b>frameworks</b> I have used.

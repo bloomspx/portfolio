@@ -4,8 +4,8 @@
 
 :root {
     --primary: rgb(107 114 128);
-    --secondary: #ff9b85;
-    --tertiary: #b85265;
+    --secondary: #1a1b1c;
+    --tertiary: #414345;
 }
 
 /* Firefox */
@@ -64,19 +64,20 @@
     .padding-lg {
         @apply py-20
     }
-    
-    .paddingBox {
-        @apply pt-40 pb-20 text-center
-    }
-    
-    .mainPage {
-        @apply bg-gradient-to-br from-black-pearl to-dark-azure text-white h-screen
-        snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 
-    }
 
+    .subtitle {
+        @apply pt-8 mx-10 text-base uppercase tracking-[3px] text-gray-200 text-shadow text-center
+    }
+    
+    .mainContainer {
+        @apply relative bg-gradient-to-br from-black-pearl via-dark-azure to-dark-blue text-white h-screen
+        snap-y snap-mandatory overflow-y-scroll overflow-x-hidden
+    }
+        
+    
     .headerText {
-        @apply uppercase hidden md:inline-flex text-shadow-md
-        text-sm font-semibold text-white
+        @apply uppercase text-center h-full text-white text-2xl font-bold
+        
     }
     
     .headerButton {
@@ -84,10 +85,20 @@
         
     }
 
+    .headerTitle {
+        @apply uppercase tracking-[1.5rem] ml-6
+        text-center text-white text-3xl font-bold text-shadow-md
+    }
+
+
+    .paddingContainer {
+        @apply pt-40 pb-20 text-center z-30
+    }
+
     .profileContainer {
         @apply relative w-52 h-52 overflow-hidden mx-auto rounded-full
-        mb-20 md:mb-0 md:rounded-lg md:w-64 md:h-64 md:ml-10 flex-shrink-0 
-        shadow-md shadow-gray-400
+        mb-20 md:mb-0 md:rounded-lg md:w-64 md:h-64 md:ml-10
+        flex-shrink-0 shadow-md shadow-gray-400
         border border-neutral-200 hover:shadow-2xl hover:-translate-y-1 duration-500
     }
 
@@ -96,14 +107,9 @@
             text-gray-200 transition-all hover:text-gray-100 hover:text-white hover:-translate-y-1 duration-300
         }
 
-    .headerTitle {
-        @apply uppercase tracking-[1.5rem] ml-6
-        text-center text-white text-3xl font-bold text-shadow-md
-    }
-
     .projectCard {
         @apply flex flex-col rounded-lg items-center flex-shrink-0
-        w-full bg-neutral-800 py-2 shadow-md shadow-black overflow-hidden
+        w-full bg-black-pearl/70 py-2 shadow-md shadow-black overflow-hidden
         border border-neutral-700 hover:drop-shadow-xl hover:-translate-y-1 duration-500
     }
 
@@ -142,8 +148,8 @@
             }
     
     .skillsContainer {
-        @apply flex relative flex-row text-center md:text-left  px-10
-        max-w-[2000px] justify-center mx-auto items-center
+        @apply flex relative flex-col md:flex-row text-center md:text-left px-10
+        max-w-[2000px] justify-center mx-auto items-center gap-10
     }
 
         .skillIcon {
@@ -152,11 +158,11 @@
         }
 
         .languagesContainer {
-            @apply pr-20 grid grid-cols-2 gap-5
+            @apply grid grid-cols-2 md:grid-cols-2 gap-5
         }
 
         .frameworksContainer {
-            @apply grid grid-cols-5 gap-5
+            @apply grid grid-cols-2 md:grid-cols-5 gap-5
         }
 
     .contactButton {
@@ -171,13 +177,13 @@
         focus:border-dark-salmon focus:text-melon
     }
 
-    .subtitle {
-        @apply pt-8 text-base uppercase tracking-[3px] text-gray-200 text-shadow
-    }
-
     .submitButton {
         @apply bg-dark-salmon py-2 px-4 rounded-md shadow-lg
         font-mono font-semibold uppercase
+    }
+
+    .footnote {
+        @apply text-sm text-gray-400 text-shadow
     }
 
 }

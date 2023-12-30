@@ -50,7 +50,6 @@ export default function ProjectCard({name, img, description, tech, summary, url}
             />
             <div className="summaryBody">
                 <div className='summaryContent'>{summaryPoints}</div>
-                {/* <p className='summaryContent'>{summaryPoints}</p> */}
             </div>
         </div>
         
@@ -62,7 +61,7 @@ export default function ProjectCard({name, img, description, tech, summary, url}
                 transition={{ duration: 0.5}}
                 whileInView={{ opacity: 1, y: 0}}
                 viewport={{once:true}}
-                className='text-2xl font-semibold whitespace-nowrap text-shadow-md'>
+                className='text-2xl font-semibold text-shadow-md'>
                 {name}
             </motion.h1>
             <motion.p 
