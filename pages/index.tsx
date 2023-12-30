@@ -1,5 +1,4 @@
 import About from '@/components/About'
-import BackgroundCircles from '@/components/BackgroundCircles'
 import BackgroundCirclesLeft from '@/components/BackgroundCirclesLeft'
 import BackgroundCirclesRight from '@/components/BackgroundCirclesRight'
 import ContactMe from '@/components/ContactMe'

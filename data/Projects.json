@@ -55,13 +55,12 @@
   },
   {
     "name": "Portfolio",
-    "img": "Portfolio2",
+    "img": "Home",
     "desc": "A personal portfolio webpage",
     "url": "https://github.com/bloomspx/portfolio",
     "tech": ["React", "Typescript", "TailwindCSS", "NodeJS", "CSS"],
     "sum": [
-      "Implemented using Typescript and React with Tailwind CSS",
-      "My first personal project that you're looking at right now!"
+      "Implemented using Typescript and NextJS with React and TailwindCSS"
     ]
   }
 ]

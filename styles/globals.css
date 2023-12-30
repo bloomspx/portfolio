@@ -132,7 +132,7 @@
 
             .summaryContent {
                 @apply flex flex-col h-full w-full p-16 justify-center
-                bg-black/90 bg-opacity-10 text-lg text-white text-left font-mono 
+                bg-black/95 bg-opacity-10 text-lg text-white text-left 
             }
 
         .projectContainer {
