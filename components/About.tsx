@@ -36,7 +36,7 @@ export default function About({}: Props) {
                     A little about myself...
                 </h4>
                 <p className='text-lg'>
-                    👋 Hi, my name is<span className='font-bold font-mono text-melon'> Soh Pei Xuan </span> 
+                    👋 Hi, my name is<span className='font-bold font-mono text-melon'> Pei Xuan </span> 
                     and I'm currently a <span className='text-melon font-semibold font-mono'>Final Year Computer Science 🖥️ Undergraduate </span>
                     at Singapore University of Technology and Design (SUTD).
                     <br/> <br/> 
