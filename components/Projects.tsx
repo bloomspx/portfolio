@@ -22,7 +22,7 @@ export default function Projects({}: Props) {
       <h3 className='headerTitle'>Projects</h3>
       <div className='padding-sm'></div>
       <div 
-        className='max-w-7xl grid grid-cols-1 mx-6 md:mx-auto md:grid-cols-2 
+        className='max-w-7xl px-6 grid grid-cols-1 mx-6 md:mx-auto md:grid-cols-2 
         gap-8 justify-items-center text-left'
       >
         {projectCards}

@@ -30,20 +30,26 @@ export default function Skills({}: Props) {
       </h4>
       <div className='padding-sm'></div>
       <div className='flex-row '>
-          <motion.div 
-            initial={{opacity:0, scale:0.8}}
-            whileInView={{opacity:1, scale:1}}
-            transition={{duration:0.9}}
-            viewport={{ once: true }}
+          <div 
             className='skillsContainer'>
 
-            <div className='languagesContainer'>
+            <motion.div 
+              initial={{opacity:0, scale:0.8, x:-30}}
+              whileInView={{opacity:1, scale:1, x:0}}
+              transition={{duration:1}}
+              viewport={{ once: true }}
+              className='languagesContainer'>
               {languageCards}
-            </div>
-            <div className='frameworksContainer'>
+            </motion.div>
+            <motion.div 
+              initial={{opacity:0, scale:0.8, x:30}}
+              whileInView={{opacity:1, scale:1, x:0}}
+              transition={{duration:1}}
+              viewport={{ once: true }}
+              className='frameworksContainer'>
               {frameworkCards}
-            </div>
-          </motion.div>
+            </motion.div>
+          </div>
       </div>
     </div>
   )

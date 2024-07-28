@@ -1,10 +1,23 @@
 [
   {
+    "name": "ShrimpAnywhere",
+    "img": "ShrimpAnywhere4",
+    "desc": "An IoT shrimp monitoring system that remotely tracks water quality parameters and shrimp growth",
+    "url": "https://capstoneshowcase.sutd.edu.sg/project/shrimpanywhere/",
+    "tech": ["AWS", "React", "Typescript", "NodeJS", "TailwindCSS", "Python", "MongoDB", "Docker", "Flask"],
+    "sum": [
+      "Trained and deployed GroundingDINO, an object detection model, to enumerate shrimp underwater with 85% validation accuracy",
+      "Deployed model as a REST API using Flask and dockerized for production",
+      "Developed the frontend UI for the IoT data dashboard using React and TailwindCSS",
+      "Integrated backend API calls with React Query to fetch data from MongoDB and TimeScaleDB to display data in real-time"
+    ]
+  },
+  {
     "name": "SmartDrop",
     "img": "SmartDrop",
-    "desc": "An IOT delivery box built using AWS + React & Raspberry Pi + ESP32",
+    "desc": "An IoT delivery box built using AWS + React & Raspberry Pi + ESP32",
     "url": "https://github.com/bloomspx/smartdrop",
-    "tech": ["AWS", "React", "Javascript", "NodeJS", "CSS", "Python"],
+    "tech": ["AWS", "React", "Javascript", "NodeJS", "TailwindCSS", "Python"],
     "sum": [
       "Set up backend server using AWS Services (DynamoDB, Lambda, API, IoT Core) for frontend web application to call APIs and update User and Order databases",
       "Developed React web application for users to track orders delivery status"

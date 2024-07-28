@@ -99,7 +99,7 @@ function ContactMe({}: Props) {
     </motion.div>
     <div className="padding-lg"></div>
     <h4 className="footnote">
-      Last Updated on Dec 2023 🎄
+      Last Updated on Jul 2024 
     </h4>
     <div className="padding-sm"></div>
     </div>
